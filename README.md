@@ -1,7 +1,7 @@
 # Duckworth-Lewis-Stern-Calculator
 The implementation of DLS using Non-linear Regression
 
-# Approach:
+## Approach:
 - For DLS Implementation, we need Over, Total Runs scored in that over, Total Runs scored in the inning and Wickets in hand. We first preprocess the data to fix the Total Runs column. 
 - The function “error_func” calculates the mean squared error for given Z0(w) and L.
 - The SciPy’s “optimize” function was used to optimize the error_func which generates the parameters as follows:
@@ -19,9 +19,10 @@ The implementation of DLS using Non-linear Regression
 | 9 | 239.85 | 10.82669 | 19.42 |
 | 10 | 285.13 | 10.82669 | 19.53 |
 
+## Plot of Predicted Runs v/s Overs Remaining:
 ![DLS Curve](./plot.png)
 
-# Results:
+## Results:
 
 Following are some results of target prediction using implemented DLS:
 
